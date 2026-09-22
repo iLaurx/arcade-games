@@ -1,0 +1,44 @@
+:root{color-scheme:dark;--bg:#0b0b18;--ink:#f7f5fa;--muted:#aebbd0;--cyan:#58e9f7;--pink:#f04485;--line:#3b4055;font-family:'Courier New',Courier,monospace}
+*{box-sizing:border-box}
+html{min-height:100%}
+body{min-width:320px;min-height:100vh;margin:0;background:radial-gradient(ellipse 54% 33% at 50% 99%,#301129 0%,transparent 100%),linear-gradient(180deg,#111025 0%,#0a0b17 57%,#0d0b18 100%);color:var(--ink);overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;opacity:.15;background:repeating-linear-gradient(to bottom,transparent 0 3px,#fff 4px,transparent 5px);mix-blend-mode:soft-light}
+.ambient-glow{position:fixed;top:-360px;left:50%;width:min(900px,100vw);height:730px;transform:translateX(-50%);background:radial-gradient(ellipse,#28184a 0%,transparent 67%);filter:blur(25px);opacity:.55;pointer-events:none}
+.floor{position:fixed;z-index:0;left:-10%;right:-10%;bottom:-155px;height:315px;transform:perspective(240px) rotateX(65deg);transform-origin:center top;background-image:linear-gradient(#ca376d80 1px,transparent 1px),linear-gradient(90deg,#4289a480 1px,transparent 1px);background-size:100% 29px,8% 100%;mask-image:linear-gradient(to bottom,transparent,#000 27%,#000 80%,transparent);pointer-events:none}
+.arcade{position:relative;z-index:1;max-width:1540px;min-height:100vh;margin:0 auto;padding:58px 36px 32px;display:flex;flex-direction:column;align-items:center}
+.hero{text-align:center;width:100%}
+.eyebrow,.card-title,.card-action,.footer,.dialog-eyebrow,.dialog-status{font-size:11px;font-weight:700;letter-spacing:.27em}
+.eyebrow{margin:0 0 33px;color:var(--cyan);text-shadow:0 0 12px #36cce6}
+h1{font-size:clamp(44px,5.3vw,66px);font-weight:400;line-height:1;letter-spacing:.14em;margin:0 0 25px;padding-left:.14em;text-shadow:0 0 6px #fff,0 0 19px #f2b8d4,0 0 37px #e74797}
+.hero-rule{width:min(430px,75vw);height:2px;margin:0 auto 24px;background:linear-gradient(90deg,transparent,var(--pink) 28%,#f8c2c8 48%,var(--cyan) 73%,transparent);box-shadow:0 0 13px #ef498a7d}
+.subtitle{margin:0;color:var(--muted);font-size:20px;letter-spacing:.08em;font-weight:400}
+.library{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px;width:100%;max-width:1100px;margin:77px auto 30px}
+.game-card{min-width:0;min-height:425px;display:flex;flex-direction:column;overflow:hidden;border:1px solid transparent;border-radius:8px;background:linear-gradient(135deg,#fb367c,#aaacbd 38%,#33daee 100%) border-box;box-shadow:0 18px 38px #0005,0 0 27px #ef3d790c;transition:transform .25s ease,box-shadow .25s ease}
+.game-card:hover,.game-card:focus-within{transform:translateY(-7px);box-shadow:0 23px 46px #0007,0 0 23px #ed478943}
+.card-title{height:63px;padding:0 17px;display:grid;grid-template-columns:34px 1fr 18px;align-items:center;background:repeating-linear-gradient(0deg,#fff1 0 1px,transparent 1px 4px),linear-gradient(110deg,#261627,#292b3e);border-bottom:1px solid #e05285;text-align:center}
+.card-title h2{margin:0;font:inherit;letter-spacing:.14em;color:#fff5f7;white-space:nowrap}
+.card-number{color:#e879a2;text-align:left;font-size:10px;letter-spacing:0}
+.card-symbol{color:#80e9ed;font-size:13px;letter-spacing:0;text-align:right}
+.cover{height:185px;overflow:hidden;background:#1b2441;border-bottom:1px solid #6284a5;position:relative}
+.cover::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,#08132644 0 1px,transparent 1px 4px);pointer-events:none}
+.cover svg{display:block;width:100%;height:100%;image-rendering:pixelated}
+.card-content{flex:1;min-height:176px;padding:24px 26px 20px;display:flex;flex-direction:column;align-items:center;text-align:center;background:repeating-linear-gradient(0deg,#fff1 0 1px,transparent 1px 4px),linear-gradient(145deg,#252839,#0a2632)}
+.card-content p{max-width:290px;margin:0;color:#b5c4d9;font-size:16px;line-height:1.55;letter-spacing:.03em}
+.card-action{margin-top:auto;padding:18px 20px 4px;border:0;background:none;color:var(--cyan);font-family:inherit;cursor:pointer;text-shadow:0 0 10px #19d9f69a;transition:color .2s,text-shadow .2s}
+.card-action span{font-size:20px;vertical-align:-2px;margin-left:6px;letter-spacing:0}
+.card-action:hover,.card-action:focus-visible{color:white;text-shadow:0 0 14px var(--cyan)}
+button:focus-visible{outline:2px solid var(--cyan);outline-offset:4px;border-radius:2px}
+.footer{margin:auto 0 0;display:flex;align-items:center;gap:16px;color:#7a809b;font-size:9px;letter-spacing:.2em;text-align:center}
+.footer-dot{width:5px;height:5px;background:var(--pink);transform:rotate(45deg);box-shadow:0 0 9px var(--pink)}
+.game-dialog{width:min(440px,calc(100vw - 36px));padding:36px;border:1px solid #eb6c9c;border-radius:8px;background:repeating-linear-gradient(0deg,#fff1 0 1px,transparent 1px 4px),linear-gradient(145deg,#24233a,#0b2130);box-shadow:0 0 50px #ee469b44,0 25px 70px #000b;color:var(--ink);font-family:inherit}
+.game-dialog::backdrop{background:#050611cf;backdrop-filter:blur(5px)}
+.dialog-close{position:absolute;top:13px;right:17px;padding:0 5px;border:0;background:transparent;color:#b6c7da;font-size:30px;line-height:1;cursor:pointer}
+.dialog-eyebrow{color:var(--cyan);margin:0 0 22px;font-size:10px}
+.game-dialog h2{margin:0 0 18px;font-size:27px;letter-spacing:.11em;font-weight:400;text-shadow:0 0 14px #ef739f}
+#dialog-description{color:#becbdb;font-size:15px;line-height:1.6;margin:0 0 28px}
+.dialog-status{display:flex;align-items:center;gap:10px;border-top:1px solid #70809655;padding-top:20px;color:#f1afc9;font-size:10px}
+.status-light{width:7px;height:7px;border-radius:50%;background:var(--pink);box-shadow:0 0 10px var(--pink)}
+.dialog-note{color:#8f9db0;font-size:12px;line-height:1.6;margin:12px 0 0}
+@media(max-width:900px){.arcade{padding:46px 24px 32px}.library{gap:18px;margin-top:65px}.card-title{padding:0 11px;grid-template-columns:24px 1fr 14px;font-size:9px}.card-content{padding:19px 14px}.card-content p{font-size:14px}.cover{height:160px}.game-card{min-height:390px}}
+@media(max-width:640px){.arcade{padding:43px 20px 30px}.eyebrow{margin-bottom:27px}.subtitle{font-size:16px}.library{grid-template-columns:1fr;max-width:390px;gap:25px;margin-top:52px}.game-card{min-height:410px}.card-title{height:58px;padding:0 17px;grid-template-columns:34px 1fr 18px;font-size:11px}.cover{height:185px}.card-content{min-height:164px;padding:20px}.card-content p{font-size:15px}.floor{position:absolute;bottom:-30px;height:280px}.footer{margin-top:18px;font-size:8px}}
+@media(prefers-reduced-motion:reduce){.game-card,.card-action{transition:none}}

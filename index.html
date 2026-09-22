@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0b18" />
+    <meta name="description" content="Una colección de juegos arcade. Elige tu próxima partida." />
+    <title>Arcade — Selecciona tu juego</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient-glow" aria-hidden="true"></div>
+    <div class="floor" aria-hidden="true"></div>
+
+    <main class="arcade">
+      <header class="hero">
+        <p class="eyebrow">READY TO PLAY</p>
+        <h1>ARCADE</h1>
+        <div class="hero-rule" aria-hidden="true"></div>
+        <p class="subtitle">Selecciona tu juego</p>
+      </header>
+
+      <section class="library" aria-label="Juegos disponibles próximamente">
+        <article class="game-card" data-game="neon-drift">
+          <div class="card-title"><span class="card-number">01</span><h2>NEON DRIFT</h2><span class="card-symbol" aria-hidden="true">✦</span></div>
+          <div class="cover cover-drift" role="img" aria-label="Auto deportivo recorriendo una ciudad de neón al atardecer">
+            <svg viewBox="0 0 600 330" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs>
+                <linearGradient id="drift-sky" x2="0" y2="1"><stop stop-color="#23143f"/><stop offset=".52" stop-color="#913b79"/><stop offset="1" stop-color="#f59b75"/></linearGradient>
+                <linearGradient id="drift-road" x2="0" y2="1"><stop stop-color="#27243e"/><stop offset="1" stop-color="#080e1d"/></linearGradient>
+              </defs>
+              <path fill="url(#drift-sky)" d="M0 0h600v330H0z"/>
+              <circle cx="300" cy="135" r="76" fill="#ffbd8c"/><path d="M224 139h152M227 152h146M233 165h134M245 178h110M261 191h78" stroke="#ad5184" stroke-width="7"/>
+              <path fill="#241e3c" d="M0 174h27v-44h15v44h32v-73h18v73h17v-40h18v40h28v-57h17v57h32v-34h18v34h170v-37h19v37h19v-84h18v84h18v-46h20v46h29v-62h18v62h25v-32h15v32h43v156H0z"/>
+              <path d="M0 204h600" stroke="#fd6c9c" stroke-width="4"/><path fill="url(#drift-road)" d="M0 330 215 204h170l215 126z"/>
+              <path d="M300 213v117M252 213 177 330M348 213l75 117" stroke="#fd679d" stroke-width="3" opacity=".75"/><path d="M0 267h600M0 300h600" stroke="#e34982" opacity=".35"/>
+              <path d="m194 268 33-29 44-8h71l39 9 29 28-13 24H206z" fill="#111426" stroke="#66edff" stroke-width="4"/><path d="m239 239 30-9h72l25 9-14 16H224z" fill="#6de7f0" opacity=".5"/><path d="M212 269h45v12h-45zm130 0h45v12h-45z" fill="#ff4b91"/><path d="M259 283h84" stroke="#81edfc" stroke-width="4"/>
+              <path d="M20 219h80m400 0h80" stroke="#59dbea" opacity=".65" stroke-width="3"/>
+            </svg>
+          </div>
+          <div class="card-content"><p>Corre por una ciudad que nunca apaga sus luces.</p><button type="button" class="card-action" data-open-game="neon-drift">EXPLORAR <span aria-hidden="true">›</span></button></div>
+        </article>
+
+        <article class="game-card" data-game="orbit-runner">
+          <div class="card-title"><span class="card-number">02</span><h2>ORBIT RUNNER</h2><span class="card-symbol" aria-hidden="true">✦</span></div>
+          <div class="cover cover-orbit" role="img" aria-label="Nave espacial pixelada volando entre planetas y estrellas">
+            <svg viewBox="0 0 600 330" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><linearGradient id="orbit-space" x2="1" y2="1"><stop stop-color="#071a36"/><stop offset=".55" stop-color="#18295b"/><stop offset="1" stop-color="#553677"/></linearGradient><radialGradient id="orbit-planet"><stop stop-color="#4ce7f0"/><stop offset="1" stop-color="#215b9a"/></radialGradient></defs>
+              <path fill="url(#orbit-space)" d="M0 0h600v330H0z"/><path d="M0 45h600M0 102h600M0 160h600M0 219h600M0 277h600M56 0v330M139 0v330M223 0v330M307 0v330M391 0v330M475 0v330M559 0v330" stroke="#68c9ed" opacity=".09"/>
+              <circle cx="461" cy="156" r="91" fill="url(#orbit-planet)"/><path d="M369 155c43-37 130-65 188-43M380 202c58-1 118-40 164-84" fill="none" stroke="#85e8f2" opacity=".6" stroke-width="4"/><ellipse cx="458" cy="158" rx="143" ry="39" transform="rotate(-20 458 158)" fill="none" stroke="#b8f9fb" stroke-width="8" opacity=".8"/>
+              <path d="M48 69h8m106 47h6m84-78h8m42 103h5m209-91h9m-76 214h6m-299-32h8m-79 39h5" stroke="#fff4dc" stroke-width="4" stroke-linecap="square"/><path d="M100 178h17m-8-8v17M529 234h17m-8-8v17" stroke="#8bf4ff" stroke-width="3"/>
+              <path d="m169 161 74-28 45 25 30 0-28 24-46 25-75-27-34-10z" fill="#d7edee" stroke="#172645" stroke-width="5"/><path d="m170 161 78-25 15 23-15 44-78-23z" fill="#8bdce9"/><path d="m178 150 58-17-12-28-37 23zM178 190l58 17-12 27-37-22z" fill="#f06b9a"/><path d="m137 164-52-19 15 23-15 24 52-17z" fill="#ffb778"/><path d="m79 164-34-13 9 17-9 18 34-12z" fill="#fff0a9"/><circle cx="270" cy="170" r="9" fill="#19305a"/>
+              <path d="M23 291h155m-101 12h98m-145-25h88" stroke="#64d9f2" opacity=".5" stroke-width="3"/>
+            </svg>
+          </div>
+          <div class="card-content"><p>Esquiva meteoritos y alcanza una nueva órbita.</p><button type="button" class="card-action" data-open-game="orbit-runner">EXPLORAR <span aria-hidden="true">›</span></button></div>
+        </article>
+
+        <article class="game-card" data-game="pixel-quest">
+          <div class="card-title"><span class="card-number">03</span><h2>PIXEL QUEST</h2><span class="card-symbol" aria-hidden="true">✦</span></div>
+          <div class="cover cover-quest" role="img" aria-label="Castillo pixelado en un paisaje fantástico con montañas y bosque">
+            <svg viewBox="0 0 600 330" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><linearGradient id="quest-sky" x2="0" y2="1"><stop stop-color="#2b315d"/><stop offset=".65" stop-color="#8b668d"/><stop offset="1" stop-color="#efb08a"/></linearGradient></defs>
+              <path fill="url(#quest-sky)" d="M0 0h600v330H0z"/><circle cx="439" cy="75" r="35" fill="#ffdbad"/><path d="m0 178 90-91 81 85 75-67 90 82 60-69 75 61 57-50 72 54v147H0z" fill="#626083"/><path d="m0 205 97-66 76 72 75-47 82 45 79-58 82 54 50-34 59 43v116H0z" fill="#3a4d70"/>
+              <path d="M0 245h600v85H0z" fill="#183b4d"/><path d="M0 272h600v58H0z" fill="#16333c"/><path d="M0 300h600v30H0z" fill="#102a30"/><path d="M50 260v-70m-20 27 20-50 20 50zm-20 25 20-48 20 48zM536 260v-83m-25 36 25-62 25 62zm-27 28 27-53 27 53z" fill="#102d42" stroke="#102d42" stroke-width="8"/>
+              <path d="M241 237v-96h27v-26h28v26h51v-26h28v26h25v96z" fill="#2a334f" stroke="#e4a8a0" stroke-width="4"/><path d="m230 143 24-39 25 39zm47-25 18-39 20 39zm70 0 17-39 23 39zm36 25 18-39 22 39z" fill="#e7909a"/><path d="M307 237v-49a14 14 0 0 1 28 0v49" fill="#111f37"/><path d="M256 167h16v25h-16zm94 0h16v25h-16z" fill="#f8d694"/>
+              <path d="M0 265h600" stroke="#69b9a7" stroke-width="4"/><path d="M96 293h24m19 11h29m315-14h20m24 12h32" stroke="#70a586" stroke-width="5"/><path d="M192 264h21v25h-21z" fill="#f3c98d"/><path d="M186 258h33v12h-33z" fill="#e07291"/><path d="M194 288h6v16m8-16h6v16" stroke="#18243b" stroke-width="6"/>
+            </svg>
+          </div>
+          <div class="card-content"><p>Un pequeño héroe. Un mundo lleno de secretos.</p><button type="button" class="card-action" data-open-game="pixel-quest">EXPLORAR <span aria-hidden="true">›</span></button></div>
+        </article>
+      </section>
+
+      <footer class="footer"><span>INSERT COIN</span><span class="footer-dot" aria-hidden="true"></span><span>CHOOSE YOUR ADVENTURE</span></footer>
+    </main>
+
+    <dialog class="game-dialog" aria-labelledby="dialog-title">
+      <button type="button" class="dialog-close" aria-label="Cerrar">×</button>
+      <p class="dialog-eyebrow">PLAYER SELECT // <span id="dialog-number"></span></p>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <div class="dialog-status"><span class="status-light" aria-hidden="true"></span> PRÓXIMAMENTE</div>
+      <p class="dialog-note">Estamos preparando esta aventura. Vuelve pronto para jugar.</p>
+    </dialog>
+  </body>
+</html>
